@@ -1,4 +1,5 @@
 import React from "react";
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 function CreateArea(props) {
   const [note, takeNote] = React.useState({
     title: "",
@@ -45,7 +46,7 @@ function CreateArea(props) {
           value={note.content}
         />
         <button onClick={addNote} type="submit">
-          Add
+          <AddCircleOutlineIcon />
         </button>
       </form>
     </div>
